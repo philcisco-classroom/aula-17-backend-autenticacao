@@ -55,6 +55,13 @@ Uma forma comum para gerar o JWT_SECRET é usar o próprio node. Com a seguinte 
 Em seguida copiar o resultado e colocar como valor de JWT_SECRET
   - $ .exit (para fechar o terminal node)
 
+Caso não tenha configurado o banco de dados:
+   - $ npx prisma db push
+   - $ npx prisma generate
+
+Para monitorar os dados no banco pelo navegador:
+   - $ npx prisma studio
+
 
 
 
