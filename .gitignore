@@ -141,3 +141,22 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+
+# Generated Prisma Client
+/src/generated/prisma/
+
+# Environment variables
+.env
+.env.*
+
+# Allow example environment file
+!.env.example
+
+# Logs
+*.log
+
+# SQLite database
+*.db
+*.db-journal
