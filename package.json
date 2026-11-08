@@ -4,30 +4,35 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --respawn src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio --url \"file://./dev.db\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
-    "@types/bcrypt": "^6.0.0",
-    "@types/cookie-parser": "^1.4.10",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^25.9.3",
-    "prisma": "^6.19.3",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^6.0.3"
+    "@types/bcrypt": "6.0.0",
+    "@types/cookie-parser": "1.4.10",
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/jsonwebtoken": "9.0.10",
+    "@types/node": "25.9.3",
+    "prisma": "7.10.1",
+    "typescript": "7.0.2"
   },
   "dependencies": {
-    "@prisma/client": "^6.19.3",
-    "bcrypt": "^6.0.0",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3"
+    "@prisma/adapter-better-sqlite3": "7.10.1",
+    "@prisma/client": "7.10.1",
+    "bcrypt": "6.0.0",
+    "better-sqlite3": "13.0.3",
+    "cookie-parser": "1.4.7",
+    "cors": "2.8.6",
+    "express": "5.2.1",
+    "jsonwebtoken": "9.0.3",
+    "tsx": "4.23.15"
   }
 }

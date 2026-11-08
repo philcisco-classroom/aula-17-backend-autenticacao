@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { FilmeService } from "../services/filme.service";
-import { AuthPayload } from "../tipos/auth-payload";
+import { FilmeService } from "../services/filme.service.js";
+import { AuthPayload } from "../tipos/auth-payload.js";
 
 const filmeService = new FilmeService();
 

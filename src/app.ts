@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
-import { filmeRoutes } from './routes/filme.routes';
-import {authRoutes} from './routes/auth.routes';
+import { filmeRoutes } from './routes/filme.routes.js';
+import {authRoutes} from './routes/auth.routes.js';
 import cookieParser from 'cookie-parser';
 
 const app = express();

@@ -1,6 +1,6 @@
-import { FilmeController } from "../controller/filme.controller";
+import { FilmeController } from "../controller/filme.controller.js";
 import { Router } from "express";
-import { authMiddleware } from "../middleware/auth.middleware";
+import { authMiddleware } from "../middleware/auth.middleware.js";
 
 
 const router = Router();

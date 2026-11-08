@@ -1,5 +1,7 @@
-import { app } from "./app";
+import { app } from "./app.js";
 
-app.listen(3001, () => {
-    console.log('Servidor ligado na porta 3001');
+const port : number = 3001;
+
+app.listen(port, () => {
+    console.log(`Servidor ligado na porta ${port}`);
 });
